@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aagaman - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+            font-size: 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(58, 58, 156);
+            font-size: 1.9rem;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        #projects {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #projects h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .project-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding: 0 20px;
+        }
+
+        .project {
+            text-align: left;
+            width: 100%;
+            max-width: 300px;
+            background-color: #f2f2f2;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .project img {
+            width: 100%;
+            margin-bottom: 20px;
+            border-radius: 4px;
+        }
+
+        .project-details {
+            flex: 1;
+        }
+
+        .project h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            color: #000;
+        }
+
+        .project p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #000;
+        }
+
+        .project a {
+            text-decoration: none;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="left">Portfolio</div>
+        <div class="right"></div>
+        <ul>
+            <li><a href="/Home.Html">Home</a></li>
+            <li><a href="/About.Html">About</a></li>
+            <li><a href="/Service.Html">Service</a></li>
+            <li><a href="/Projects.Html">Projects</a></li>
+            <li><a href="/Contact.Html">Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project-wrapper">
+        <div class="project">
+            <img src="Calculator.png" alt="Project 1">
+            <div class="project-details">
+                <h3>Calculator</h3>
+                <p>Calculators: The unsung heroes of accurate arithmetic and problem-solving.</p>
+                <a href="https://jaz080.github.io/Calculator/" target="_blank" rel="noopener noreferrer">View
+                    Project</a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="Watch.png" alt="Project 2">
+            <div class="project-details">
+                <h3>Digital Watch</h3>
+                <p>Digital clocks: Timekeepers in the modern world, counting seconds with precision.</p>
+                <a href="https://jaz080.github.io/DigitalWatch/" target="_blank" rel="noopener noreferrer">View
+                    Project</a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="Heart.png" alt="Project 3">
+            <div class="project-details">
+                <h3>Heart Animation</h3>
+                <p>Heart animation: Captivating movements that symbolize love and emotional connections.</p>
+                <a href="https://jaz080.github.io/Heart-Trail/" target="_blank" rel="noopener noreferrer">View
+                    Project</a>
+            </div>
+        </div>
+        <div class="project">
+            <img src="Switch.png" alt="Project 4">
+            <div class="project-details">
+                <h3>Dark mode on/off</h3>
+                <p>"Dark mode: Toggling between light and dark, enhancing visual comfort.</p>
+                <a href="https://jaz080.github.io/Dark/" target="_blank" rel="noopener noreferrer">View Project</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

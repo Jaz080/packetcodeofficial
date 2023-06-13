@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aagaman - Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+    
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+        }
+    
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+        }
+    
+        nav ul li {
+            margin: 0 23px;
+            font-size: 23px;
+        }
+    
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+    
+        nav ul li a:hover {
+            color: rgb(58, 58, 156);
+            font-size: 1.9rem;
+        }
+    
+        .left {
+            font-size: 1.5rem;
+        }
+    
+        .container {
+            max-width: 67%;
+            margin: 0 auto;
+            display: flex;
+        }
+    
+        .left-section {
+            flex: 1;
+        }
+    
+        .right-section {
+            flex: 1;
+            text-align: right;
+        }
+    
+        h2 {
+            font-size: 28px;
+            color: white;
+        }
+    
+        p {
+            font-size: 18px;
+            color: gray;
+            margin-bottom: 20px;
+        }
+    
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+        li {
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+    
+        .bar-container {
+            height: 10px;
+            background-color: #666;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    
+        .bar-progress {
+            height: 100%;
+            background-color: #58C;
+            border-radius: 5px;
+            width: 0;
+            transition: width 1s ease-in-out;
+        }
+    
+        .left-section-text {
+            margin-top: 50px;
+            color: gray;
+        }
+    
+        .right-section img {
+            width: 80%;
+            margin: 50px;
+            float: right;
+        }
+    
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    
+        .skills-heading {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: white;
+        }
+    
+        @media screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                max-width: 100%;
+            }
+    
+            .right-section img {
+                width: 100%;
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <div class="left">Portfolio</div>
+        <div class="right"></div>
+        <ul>
+            <li><a href="/Home.Html">Home</a></li>
+            <li><a href="/About.Html">About</a></li>
+            <li><a href="/Service.Html">Service</a></li>
+            <li><a href="/Projects.Html">Projects</a></li>
+            <li><a href="/Contact.Html">Contact Me</a></li>
+        </ul>
+    </nav>
+</header>
+<section id="about">
+    <div class="container">
+        <div class="left-section">
+            <h2>About Me</h2>
+            <div class="left-section-text">
+                <p>
+                    Introducing Aagaman, a passionate individual who immerses themselves in the world of technology,
+                    programming, graphic designing, and hardware repair. With a deep love for computers and an insatiable
+                    curiosity, Aagaman constantly seeks opportunities to explore and expand their knowledge in these
+                    fields. They find joy in crafting intricate lines of code, bringing their ideas to life, and showcasing
+                    their creativity through visually captivating designs. Aagaman's technical expertise also extends to
+                    hardware repair, where they possess the skills to troubleshoot and fix various technical issues. Through
+                    their dedication and enthusiasm, Aagaman is paving the way for a future filled with innovation and
+                    endless possibilities.
+                </p>
+                <h3 class="skills-heading">My Skills in Computer</h3>
+                <ul>
+                    <li>
+                        <span>HTML:</span>
+                        <div class="bar-container">
+                            <div class="bar-progress" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Hardware Repair:</span>
+                        <div class="bar-container">
+                            <div class="bar-progress" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>C:</span>
+                        <div class="bar-container">
+                            <div class="bar-progress" style="width: 50%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>CSS:</span>
+                        <div class="bar-container">
+                            <div class="bar-progress" style="width: 40%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Graphic Designing:</span>
+                        <div class="bar-container">
+                            <div class="bar-progress" style="width: 35%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Networking:</span>
+                        <div class="bar-container">
+                            <div class="bar-progress" style="width: 20%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>JavaScript:</span>
+                        <div class="bar-container">
+                            <div class="bar-progress" style="width: 5%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span>Python:</span>
+                        <div class="bar-container">
+                            <div class="bar-progress" style="width: 10%;"></div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <img src="Name.png" alt="Profile Image">
+        </div>
+    </div>
+</section>
+</body>
+</html>
